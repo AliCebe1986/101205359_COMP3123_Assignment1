@@ -9,8 +9,21 @@
 <body>
     <div class="container">
         <h2>Employees</h2>
-        <button onclick="fetchEmployees()">Get All Employees</button>
-        <div id="employee-list"></div>
+        <div id="employee-form">
+            <h3>Add New Employee</h3>
+            <input type="text" id="first_name" placeholder="First Name" required>
+            <input type="text" id="last_name" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="position" placeholder="Position" required>
+            <input type="number" id="salary" placeholder="Salary" required>
+            <input type="text" id="department" placeholder="Department" required>
+            <button id="add-employee-btn">Add Employee</button>
+        </div>
+        <div>
+            <h3>Employee List</h3>
+            <button onclick="fetchEmployees()">Get All Employees</button>
+            <div id="employee-list"></div>
+        </div>
     </div>
     <script src="/js/employees.js"></script>
 </body>
