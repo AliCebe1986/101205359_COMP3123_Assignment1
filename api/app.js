@@ -1,9 +1,9 @@
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const connectDB = require('../config/db');  // config/db.js dosyasına göre path düzeltildi
-const userRoutes = require('../routes/userRoutes');  // routes klasörüne göre path düzeltildi
-const employeeRoutes = require('../routes/employeeRoutes');  // routes klasörüne göre path düzeltildi
+const connectDB = require('../config/db');  
+const userRoutes = require('../routes/userRoutes');  
+const employeeRoutes = require('../routes/employeeRoutes');  
 const cors = require('cors');
 
 const app = express();
